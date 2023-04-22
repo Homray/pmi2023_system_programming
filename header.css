@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    /* height: 100%; */
+    background-color: #00558B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 100%;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    height: 48px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+}
+
+.menu_wrapper{
+    width: 100%;
+    /* height: 33.3%; */
+    height: 60px;
+    background-color: #333333;
+    text-align: center;
+}
+
+.menu{
+    position: relative;
+    top: 18px;
+}
+
+a{
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: color .9s;
+}
+
+a:hover{
+    color: #8897a8;
+}
