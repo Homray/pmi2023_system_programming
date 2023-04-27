@@ -8,6 +8,60 @@ body{
     font-family: "Roboto";
 }
 
+/* Шапка */
+.header{
+    width: 100%;
+    height: 120px;
+    /* height: 100%; */
+    background-color: #00558B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.invisible_block{
+    width: 105px;
+}
+
+.logo{
+    height: 100%;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    height: 48px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+}
+
+/* Меню */
+.menu_wrapper{
+    width: 100%;
+    /* height: 33.3%; */
+    height: 60px;
+    background-color: #333333;
+    text-align: center;
+}
+
+.menu{
+    position: relative;
+    top: 18px;
+}
+
+a{
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: color .9s;
+}
+
+a:hover{
+    color: #8897a8;
+}
 
 /* 1ый блок главной */
 .intro{
@@ -79,15 +133,15 @@ body{
     font-weight: 400;
     font-size: 28px;
     line-height: 36px;
-
     color: #000000;
 }
 
-.left_img{
-    align-self: center;
+.journal_img{
+    margin-top: 10px;
 }
 
 .left_name{
+    margin-top: 10px;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -139,7 +193,7 @@ body{
 }
 
 .circle {
-    margin-left: 17%;
+    margin-left: 15%;
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -149,7 +203,7 @@ body{
 }
 
 .editor_text{
-    margin-left: 4.1%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -199,7 +253,7 @@ body{
 }
 
 
-/* 4ый блок главной */
+/* Последний блок */
 .bottom{
     height: 100px;
     width: 100%;

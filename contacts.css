@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* min-width: 1000px; */
+    font-family: "Roboto";
+}
+
+/* Шапка */
+.header{
+    width: 100%;
+    height: 120px;
+    /* height: 100%; */
+    background-color: #00558B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.invisible_block{
+    width: 105px;
+}
+
+.logo{
+    height: 100%;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    height: 48px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+}
+
+/* Меню */
+.menu_wrapper{
+    width: 100%;
+    /* height: 33.3%; */
+    height: 60px;
+    background-color: #333333;
+    text-align: center;
+}
+
+.menu{
+    position: relative;
+    top: 18px;
+}
+
+a{
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: color .9s;
+}
+
+a:hover{
+    color: #8897a8;
+}
+
+
+/* Основной блок */
+.fon{
+    background-color: #D9D9D9;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.block{
+    height: 500px;
+    width: 67%;
+    max-width: 1920px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.contacts{
+    height:100%;
+    width: 47%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.main_text{
+    margin-top: 99px;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.text{
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.frame72{
+    margin-top: 50px;
+    height: 70px;
+}
+
+.form_body{
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.name{
+    width: 100%;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #1A52E1;
+}
+
+.name_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.form{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .send_form{
+    padding-top: 30px;
+    width: 100%;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+ }
+
+ .formstyle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #5F5D5D;
+    background-color: white;
+
+    border: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form1{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #797979;
+    border-radius: 3px;
+}
+
+.form2{
+    width: 80%;
+    height: 200px;
+    margin-bottom: 20px;
+    resize: none;
+    border: 1px solid #797979;
+    border-radius: 3px;
+}
+
+.send_button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+
+    color: #FFFFFF;
+    background: #1A52E1;
+    border-radius: 7px;
+    border: #FFFFFF;
+    width: 160px;
+    height: 42px;
+    /* padding: 20px 19px; */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Последний блок */
+.bottom{
+    height: 100px;
+    width: 100%;
+    background-color: #00558B;
+}
