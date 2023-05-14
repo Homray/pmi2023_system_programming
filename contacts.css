@@ -6,6 +6,7 @@
 body{
     /* min-width: 1000px; */
     font-family: "Roboto";
+    background-color: #00558B;
 }
 
 /* Шапка */
@@ -41,26 +42,42 @@ body{
 /* Меню */
 .menu_wrapper{
     width: 100%;
-    /* height: 33.3%; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
     height: 60px;
     background-color: #333333;
-    text-align: center;
 }
 
 .menu{
-    position: relative;
-    top: 18px;
+    width: 500px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-a{
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    transition: color .9s;
+ .menu_button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding: 3px 10px;
+
+    color: #FFFFFF;
+    border: 2px solid #333333;
+    background: #333333;
+    border-radius: 100px;
+    cursor: pointer;   
 }
 
-a:hover{
-    color: #8897a8;
+.menu_button:hover{
+    border: 2px solid #FFFFFF;
 }
 
 
@@ -115,11 +132,82 @@ a:hover{
     line-height: 39px;
 }
 
-.frame72{
-    margin-top: 50px;
-    height: 70px;
+/* Кнопки соцсетей */
+.sosials{
+    width: 330px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.whatsapp_button{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #2dc549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    cursor: pointer;
+}
+
+.whatsapp_button:hover{
+    /* border: 2px solid #FFFFFF; */
+    background-color: #48C95F;
+}
+
+.whatsapp_img{
+    height: 40px;
+}
+
+.telegram_button{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #27A6E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    cursor: pointer;
+}
+
+.telegram_button:hover{
+    /* border: 2px solid #FFFFFF; */
+    background-color: #52bbf0;
+}
+
+.telegram_img{
+    height: 30px;
+    margin-right: 5px;
+}
+
+.vk_button{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #0077FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    cursor: pointer;
+}
+
+.vk_button:hover{
+    /* border: 2px solid #FFFFFF; */
+    background-color: #3592fc;
+}
+
+.vk_img{
+    height: 30px;
+}
+
+
+/* Форма обратной связи */
 .form_body{
     height: 100%;
     width: 40%;
@@ -205,34 +293,25 @@ a:hover{
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
-
     color: #FFFFFF;
     background: #1A52E1;
     border-radius: 7px;
     border: #FFFFFF;
     width: 160px;
     height: 42px;
-    /* padding: 20px 19px; */
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
+.send_button:hover{
+    background: #396df0;
+}
 
 
 
 /* Последний блок */
 .bottom{
-    height: 100px;
+    /* bottom: 0px; */
+    min-height: 100%;
     width: 100%;
     background-color: #00558B;
 }
