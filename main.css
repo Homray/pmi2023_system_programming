@@ -103,7 +103,7 @@ body{
 
 .intro_right{ 
     margin-left: 7%;
-    margin-top: 59px;
+    margin-top: 120px;
     /* margin-left: 5.6%; */
     flex-direction: column;
     width: 50%;
@@ -114,6 +114,7 @@ body{
 
 .right_title{
     margin-top: 0px;
+    margin-bottom: 20px;
     margin-left: 39.5%;
     font-family: 'Roboto';
     font-style: normal;
@@ -156,11 +157,11 @@ body{
 
 .journal_img{
     height: 450px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .left_name{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -172,9 +173,9 @@ body{
 
 /* Кнопки читать и скачать */
 .rd_buttons{
-    margin-top: 3px;
-    width: 230px;
-    height: 30px;
+    margin-top: 10px;
+    width: 240px;
+    height: 31px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -184,8 +185,8 @@ body{
 }
 
 .read_button{
-    height: 30px;
-    width: 105px;
+    height: 31px;
+    width: 110px;
     font-family: Roboto;
     font-style: normal;
     color: #FFFFFF;
@@ -203,8 +204,12 @@ body{
 }
 
 .download_button{
-    height: 30px;
-    width: 125px;
+    height: 31px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -218,6 +223,11 @@ body{
 
 .download_button:hover{
     background-color: #c2c7f3;
+}
+
+.download_img{
+    margin-right: 3px;
+    height: 17px;
 }
 
 
