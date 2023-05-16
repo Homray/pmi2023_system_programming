@@ -1,19 +1,19 @@
-* {
+* { /*чтобы прблем с отступами не было*/
     margin: 0;
     padding: 0;
 }
 
 body{
-    /* min-width: 1000px; */
     font-family: "Roboto";
     background-color: #00558B;
 }
+
+
 
 /* Шапка */
 .header{
     width: 100%;
     height: 120px;
-    /* height: 100%; */
     background-color: #00558B;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@ body{
     justify-content: space-around;
 }
 
-.invisible_block{
+.invisible_block{ /* невидимый блок чтобы логотип и название нормально располагались*/
     width: 105px;
 }
 
@@ -29,7 +29,7 @@ body{
     height: 100%;
 }
 
-.title{
+.title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
     height: 48px;
@@ -39,8 +39,10 @@ body{
     color: white;
 }
 
+
+
 /* Меню */
-.menu_wrapper{
+.menu_wrapper{ /*фон*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -60,7 +62,7 @@ body{
     
 }
 
- .menu_button{
+ .menu_button{ /*кнопки меню*/
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -80,14 +82,24 @@ body{
     border: 2px solid #FFFFFF;
 }
 
+.menu_button:active{
+    background: #FFFFFF;
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+
 
 /* 1ый блок главной */
 .intro{
     background-color: #D9D9D9;
     background-size: cover;
     display: flex;
-    /* align-items: flex-start; */
-    /* justify-content: baseline; */
     justify-content:center;
 }
 
@@ -97,17 +109,15 @@ body{
     max-width: 1920px;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content:center;
 }
 
+/*правая часть*/
 .intro_right{ 
     margin-left: 7%;
     margin-top: 120px;
-    /* margin-left: 5.6%; */
     flex-direction: column;
     width: 50%;
-    /* height: 739px; */
     display: flex;
     justify-content: top;
 }
@@ -134,11 +144,13 @@ body{
     color: #000000;
 }
 
+/*левая часть*/
 .intro_left{
     margin-top: 85px;
     margin-bottom: 0px;
     flex-direction: column;
-    width: 326px;
+    /* width: 326px; */
+    width: 26%;
     display: flex;
     justify-content: top;
     align-items: center;
@@ -156,7 +168,8 @@ body{
 }
 
 .journal_img{
-    height: 450px;
+    /* height: 450px; */
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -167,15 +180,16 @@ body{
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
-
     color: #000000;
 }
 
 /* Кнопки читать и скачать */
 .rd_buttons{
     margin-top: 10px;
-    width: 240px;
-    height: 31px;
+    /* width: 240px; */
+    width: 65%;
+    /* height: 31px; */
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,8 +199,10 @@ body{
 }
 
 .read_button{
-    height: 31px;
-    width: 110px;
+    /* height: 31px; */
+    height: 100%;
+    /* width: 110px; */
+    width: 45%;
     font-family: Roboto;
     font-style: normal;
     color: #FFFFFF;
@@ -204,8 +220,10 @@ body{
 }
 
 .download_button{
-    height: 31px;
-    width: 130px;
+    /* height: 31px; */
+    height: 100%;
+    /* width: 130px; */
+    width: 55%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -231,13 +249,12 @@ body{
 }
 
 
+
 /* 2ой блок главной */
-.editors{
+.editors{ /*фон*/
     background: linear-gradient(180deg, #D9D9D9 0%, #FFFFFF 8.33%, #FFFFFF 93.23%, #FFFFFF 100%);
     background-size: cover;
     display: flex;
-    /* align-items: flex-start; */
-    /* justify-content: baseline; */
     justify-content:center;
 }
 
@@ -290,6 +307,7 @@ body{
 }
 
 
+
 /* 3ий блок главной */
 .partners{
     background-color: #E8F2FF;
@@ -332,9 +350,145 @@ body{
 }
 
 
+
 /* Последний блок */
 .bottom{
     height: 100px;
     width: 100%;
     background-color: #00558B;
+}
+
+
+
+
+/* АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media screen and (max-width: 1200px) {
+    .main_intro{
+        /* padding-bottom: 30px;
+        width: 100%;
+        max-width: 1920px;
+        display: flex; */
+        flex-direction: column;
+        /* justify-content:center; */
+        align-items: center;
+    }
+}
+
+.header_burger{
+    display: none;
+}
+
+
+
+a{
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: color .9s;
+}
+
+a:hover{
+    color: #8897a8;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .menu_wrapper{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .header_burger{
+        display: block;
+        position: relative;
+        top: 55px;
+        right: 15px;
+        width: 20px;
+        height: 15px;
+        
+        margin-right: 10px;
+
+        z-index: 50;
+    }
+
+    .header_burger::after,
+    .header_burger::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+
+        background-color: #3D2500;
+        transition: all 0.5s ease 0s;
+    }
+
+    .header_burger span{
+        position: absolute;
+        background-color: #3D2500;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 6.5px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .header_burger::before{
+        top: 0;
+    }
+
+    .header_burger::after{
+        bottom: 0;
+    }
+
+    .menu{
+        position: fixed;
+        padding-top: 100px;
+        width: 40%;
+        top: 0;
+        right: -50%;
+        background-color: white;
+
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        z-index: 10;
+
+        transition: all 0.5s ease 0s;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    .menu_item{
+        margin-top: 10px;
+        line-height: 15px;
+
+        color: #000000;
+    }
+
+    .header_burger.active::before{
+        transform: rotate(45deg);
+        top: 6.5px;
+    }
+
+    .header_burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 6.5px;
+    }
+
+    .header_burger.active span{
+        transform: scale(0);
+    }
 }

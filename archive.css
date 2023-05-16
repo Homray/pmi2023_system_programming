@@ -1,19 +1,19 @@
-* {
+* { /*чтобы прблем с отступами не было*/
     margin: 0;
     padding: 0;
 }
 
 body{
-    /* min-width: 1000px; */
     font-family: "Roboto";
     background-color: #00558B;
 }
+
+
 
 /* Шапка */
 .header{
     width: 100%;
     height: 120px;
-    /* height: 100%; */
     background-color: #00558B;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@ body{
     justify-content: space-around;
 }
 
-.invisible_block{
+.invisible_block{ /* невидимый блок чтобы логотип и название нормально располагались*/
     width: 105px;
 }
 
@@ -29,7 +29,7 @@ body{
     height: 100%;
 }
 
-.title{
+.title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
     height: 48px;
@@ -40,7 +40,7 @@ body{
 }
 
 /* Меню */
-.menu_wrapper{
+.menu_wrapper{ /*фон*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -60,7 +60,7 @@ body{
     
 }
 
- .menu_button{
+ .menu_button{ /*кнопки меню*/
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -78,6 +78,16 @@ body{
 
 .menu_button:hover{
     border: 2px solid #FFFFFF;
+}
+
+.menu_button:active{
+    background: #FFFFFF;
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 
@@ -243,6 +253,8 @@ table{
     background-color: #c2c7f3;
 } */
 
+
+/* Новый архив */
 .year_header{
     height: 65px;
     width: 1300px;
@@ -281,6 +293,19 @@ table{
     background-color: #d9e6ee;
 }
 
+/* Добавляем собственный маркер для закрытого состояния */
+details summary:before {
+    content: '\25BA';
+    /* content: '\2B9E'; */
+    margin-right: 7px;
+  }
+  
+  /* Добавляем собственный маркер для открытого состояния */
+  details[open] summary:before {
+    content: '\25BC';
+    /* content: '\2B9F'; */
+  }
+
 
 
 .year_content{
@@ -294,8 +319,6 @@ table{
 
 table, td {
     border: 1px solid black;
-    /* border-spacing: 0px; */
-    /* border-top: 0px; */
     border-collapse: collapse; 
 }
 
@@ -351,6 +374,7 @@ td{
     width: 249px;
     height: 384px;
 }
+
 
  /* Кнопки читать и скачать  */
 .rd_buttons{
@@ -410,6 +434,8 @@ td{
     margin-right: 2px;
     height: 16px;
 }
+
+
 
 /* Последний блок */
 .bottom{
