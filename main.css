@@ -32,7 +32,7 @@ body{
 .title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
-    height: 48px;
+    /* height: 48px; */
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
@@ -120,12 +120,12 @@ body{
     width: 50%;
     display: flex;
     justify-content: top;
+    align-items: center;
 }
 
 .right_title{
     margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 39.5%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -149,8 +149,8 @@ body{
     margin-top: 85px;
     margin-bottom: 0px;
     flex-direction: column;
-    /* width: 326px; */
-    width: 26%;
+    width: 326px;
+    /* width: 26%; */
     display: flex;
     justify-content: top;
     align-items: center;
@@ -168,8 +168,8 @@ body{
 }
 
 .journal_img{
-    /* height: 450px; */
-    width: 100%;
+    height: 450px;
+    /* width: 100%; */
     margin-top: 20px;
 }
 
@@ -256,6 +256,7 @@ body{
     background-size: cover;
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 
 .main_editors{
@@ -271,8 +272,8 @@ body{
 .editors_title{
     font-family: 'Roboto';
     font-style: normal;
-    width: 473px;
-    height: 48px;
+    /* width: 473px;
+    height: 48px; */
     margin-top: 130px;
     font-weight: 400;
     font-size: 40px;
@@ -331,7 +332,7 @@ body{
 .partners_title{
     font-family: 'Roboto';
     font-style: normal;
-    height: 48px;
+    /* height: 48px; */
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
@@ -339,14 +340,29 @@ body{
 }
 
 .partners_bottom{
-    height: 220px;
+    height: auto;
     width: 100%;
     max-width: 1920px;
     display: flex;
     flex-direction: row;
     align-items: top;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.logo1{
+    height: 150px;
+    width: 200px;
+}
+
+.logo2{
+    height: 200px;
+    width: 159px;
+}
+
+.logo3{
+    height: 150px;
+    width: 172px;
 }
 
 
@@ -364,15 +380,132 @@ body{
 /* АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
 @media screen and (max-width: 1200px) {
     .main_intro{
-        /* padding-bottom: 30px;
-        width: 100%;
-        max-width: 1920px;
-        display: flex; */
-        flex-direction: column;
-        /* justify-content:center; */
+        flex-direction:column-reverse;
         align-items: center;
     }
+
+     /*правая часть*/
+     .intro_right{
+        margin-left: 0;
+        margin-top: 50px; 
+        flex-direction: column;
+        width: 75%;
+  
+    }
+
+    .right_title{
+        /* margin-top: 0px; */
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .text{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        text-indent: 35px;
+    }
+
+
+    /*левая часть*/
+    .intro_left{
+        /* margin-top: 85px;
+        margin-bottom: 0px; */
+        width: 50%;
+    }
+    
+    .left_title{
+        /* margin-top: 0px; */
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        color: #000000;
+    }
+    
+    .journal_img{
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .left_name{
+        margin-top: 20px;
+        font-size: 26px;
+        line-height: 28px;
+    }
+    
+
+    /* Кнопки читать и скачать */
+    .rd_buttons{
+        margin-top: 10px;
+        
+        /* width: 240px; */
+        width: 70%;
+        /* height: 31px; */
+        height: 15%;
+    }
+    
+    .read_button{
+        /* height: 31px; */
+        height: 100%;
+        /* width: 110px; */
+        width: 45%;
+        
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .download_button{
+        /* height: 31px; */
+        height: 100%;
+        /* width: 130px; */
+        width: 55%;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px; 
+    }
+    
+    .download_img{
+        margin-right: 3px;
+        height: 17px;
+    }
+
+
+    /* 2ой блок */
+    .editors_title{
+        /* width: 473px;
+        height: 48px; */
+        margin-top: 100px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .editor{
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .circle {
+        margin-left: 7%;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+    
+    .editor_text{
+        margin-left: 5%;
+        width: 70%;
+    }
+    
+    
 }
+
+
 
 .header_burger{
     display: none;
@@ -380,22 +513,30 @@ body{
 
 
 
-a{
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    transition: color .9s;
-}
-
-a:hover{
-    color: #8897a8;
-}
-
-
-
-
-
 @media screen and (max-width: 768px){
+
+    /* Шапка */
+    .header{
+        height: 80px;
+    }
+
+    .invisible_block{ /* невидимый блок чтобы логотип и название нормально располагались*/
+        width: 70px;
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    .title{ /* название сайта*/
+        /* height: 48px; */
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+    /* Меню */
     .menu_wrapper{
         position: absolute;
         top: 0;
@@ -409,8 +550,8 @@ a:hover{
     .header_burger{
         display: block;
         position: relative;
-        top: 55px;
-        right: 15px;
+        top: 15px;
+        right: 10px;
         width: 20px;
         height: 15px;
         
@@ -451,16 +592,17 @@ a:hover{
 
     .menu{
         position: fixed;
-        padding-top: 100px;
+        padding-top: 30px;
         width: 40%;
         top: 0;
         right: -50%;
         background-color: white;
 
-        height: 100%;
+        height: 230px;
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
 
         z-index: 10;
 
@@ -469,13 +611,7 @@ a:hover{
 
     .menu.active{
         right: 0;
-    }
-
-    .menu_item{
-        margin-top: 10px;
-        line-height: 15px;
-
-        color: #000000;
+        
     }
 
     .header_burger.active::before{
@@ -491,4 +627,163 @@ a:hover{
     .header_burger.active span{
         transform: scale(0);
     }
+
+
+    /*правая часть*/
+    .intro_right{
+        margin-left: 0;
+        margin-top: 25px; 
+        flex-direction: column;
+        width: 85%;
+  
+    }
+
+    .right_title{
+        /* margin-top: 0px; */
+        margin-bottom: 10px;
+
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-indent: 30px;
+    }
+
+
+    /*левая часть*/
+    .intro_left{
+        /* margin-top: 85px;
+        margin-bottom: 0px; */
+        width: 50%;
+    }
+    
+    .left_title{
+        /* margin-top: 0px; */
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 20px;
+        color: #000000;
+    }
+    
+    .journal_img{
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .left_name{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    /* Кнопки читать и скачать */
+    .rd_buttons{
+        margin-top: 10px;
+        
+        /* width: 240px; */
+        width: 80%;
+        /* height: 31px; */
+        height: 10%;
+    }
+    
+    .read_button{
+        /* height: 31px; */
+        height: 100%;
+        /* width: 110px; */
+        width: 40%;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .download_button{
+        /* height: 31px; */
+        height: 100%;
+        /* width: 130px; */
+        width: 60%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    
+    .download_img{
+        margin-right: 3px;
+        height: 13px;
+    }
+    
+
+    /* 2ой блок */
+    .editors_title{
+        /* width: 473px;
+        height: 48px; */
+        margin-top: 100px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .editor{
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .circle {
+        margin-left: 0;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .editor_text{
+        width: 80%;
+    }
+
+
+    /* 3ий блок главной */
+    .partners_top{
+        height: 100px;
+        width: 100%;
+        max-width: 1920px;
+    }
+
+    .partners_title{
+        /* height: 48px; */
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0px 50px;
+    }
+
+    .partners_bottom{
+        height: auto;
+        width: 100%;
+        max-width: 1920px;
+        padding-bottom: 30px;
+    }
+
+    .logo1{
+        height: 75px;
+        width: 100px;
+    }
+    
+    .logo2{
+        height: 100px;
+        width: 80px;
+    }
+    
+    .logo3{
+        height: 75px;
+        width: 86px;
+    }
+
+
 }
