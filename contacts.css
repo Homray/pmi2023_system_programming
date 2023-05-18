@@ -32,7 +32,7 @@ body{
 .title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
-    height: 48px;
+    /* height: 48px; */
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
@@ -105,15 +105,16 @@ body{
 }
 
 .block{
-    height: 500px;
-    width: 67%;
+    height: auto;
+    width: 100%;
     max-width: 1920px;
     margin-top: 60px;
     margin-bottom: 60px;
     background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .contacts{
@@ -127,7 +128,6 @@ body{
 }
 
 .main_text{
-    margin-top: 99px;
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -222,8 +222,9 @@ body{
 
 /* Форма обратной связи */
 .form_body{
-    height: 100%;
-    width: 40%;
+    height: 500px;
+    width: 35%;
+    min-width: 400px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -332,18 +333,66 @@ body{
 
 
 /* АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
-@media screen and (max-width: 1200px) {
-    .main_intro{
+@media screen and (max-width: 1000px) {
+
+    .block{
+        margin-top: 40px;
+        margin-bottom: 60px;
         flex-direction: column;
-        align-items: center;
+        justify-content:space-evenly;
+    }
+    
+    .contacts{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .main_text{
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .text{
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
     }
 }
+
 
 .header_burger{
     display: none;
 }
 
+
 @media screen and (max-width: 768px){
+
+    /* Шапка */
+    .header{
+        height: 80px;
+    }
+
+    .invisible_block{ /* невидимый блок чтобы логотип и название нормально располагались*/
+        width: 70px;
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    .title{ /* название сайта*/
+        /* height: 48px; */
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+
+    /* Меню */
     .menu_wrapper{
         position: absolute;
         top: 0;
@@ -433,5 +482,135 @@ body{
 
     .header_burger.active span{
         transform: scale(0);
+    }
+
+
+
+    /* основной блок */
+    .block{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+    
+    .contacts{
+        margin-bottom: 60px;
+    }
+    
+    .main_text{
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .text{
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    
+    /* Кнопки соцсетей */
+    .sosials{
+        width: 80%;
+        height: 70px;
+        justify-content: space-evenly;
+    }
+
+    .whatsapp_button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp_img{
+        height: 30px;
+    }
+
+    .telegram_button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .telegram_img{
+        height: 27px;
+        margin-right: 4px;
+    }
+
+    .vk_button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .vk_img{
+        height: 20px;
+    }
+
+
+
+    /* Форма обратной связи */
+    .form_body{
+        height: 400px;
+        width: 60%;
+        min-width: 230px;
+    }
+
+    .name{
+        width: 100%;
+        height: 55px;
+    }
+
+    .name_text{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .form{
+        width: 100%;
+        height: 300px;
+    }
+
+    .send_form{
+        padding-top: 30px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .formstyle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        border: 0;
+        padding: 20px;
+    }
+
+    .form1{
+        width: 77%;
+        height: 45px;
+        margin-bottom: 10px;
+        border: 1px solid #797979;
+        border-radius: 3px;
+    }
+
+    .form2{
+        width: 77%;
+        height: 140px;
+        margin-bottom: 15px;
+        resize: none;
+        border: 1px solid #797979;
+        border-radius: 3px;
+    }
+
+    .send_button{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        width: 140px;
+        height: 36px;
+
     }
 }

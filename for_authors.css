@@ -32,7 +32,7 @@ body{
 .title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
-    height: 48px;
+    /* height: 48px; */
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
@@ -105,15 +105,14 @@ body{
     padding-bottom: 128px;
 }
 
-/* Убрал height */
-
 .information{
     margin-top: 95px;
     width: 78%;
     max-width: 1500px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: center;
 }
 
 .left{
@@ -146,9 +145,8 @@ body{
     color: #000000;
 }
 
-/* Изменил height */
-
 .right{
+    margin-top: 30px;
     width: 320px;
     height: 400px;
     display: flex;
@@ -169,11 +167,11 @@ body{
 .information_button{
     height: 180px;
     width: 130px;
-    font-family: Roboto;
+    /* font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 24px; */
     border: 2px solid black;
     background: white;
     border-radius: 20px;
@@ -214,18 +212,88 @@ body{
 
 
 /* АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
-@media screen and (max-width: 1200px) {
-    .main_intro{
+@media screen and (max-width: 1500px) {
+
+    /* Основний блок */
+    .fon{
+        padding-bottom: 128px;
+    }
+
+    .information{
+        margin-top: 50px;
+        width: 80%;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .left_title{
+        margin-bottom: 15px;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .right_row{
+        width: 100%;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+
+    /*кнопки с информацией*/
+    .information_button{
+        height: 160px;
+        width: 115px;
+    }
+
+    .image{
+        height: 90px;
+    }
+    
+    .signature{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
+
 
 .header_burger{
     display: none;
 }
 
+
 @media screen and (max-width: 768px){
+
+    /* Шапка */
+    .header{
+        height: 80px;
+    }
+
+    .invisible_block{ /* невидимый блок чтобы логотип и название нормально располагались*/
+        width: 70px;
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    .title{ /* название сайта*/
+        /* height: 48px; */
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+    /* Меню */
     .menu_wrapper{
         position: absolute;
         top: 0;
@@ -316,4 +384,59 @@ body{
     .header_burger.active span{
         transform: scale(0);
     }
+
+
+    /* Основний блок */
+    .information{
+        margin-top: 25px;
+    }
+
+    .left_title{
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-indent: 30px;
+    }
+
+    .right{
+        margin-top: 40px;
+        /* width: 320px;
+        height: 400px;
+        display: flex; */
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+    
+    .right_row{
+        /* height: 180px;
+        width: 100%;
+        display: flex; */
+        flex-direction: row;
+        justify-content:space-evenly;
+    
+    }
+    
+    /*кнопки с информацией*/
+    .information_button{
+        height: 140px;
+        width: 100px;
+    }
+    
+    
+    .image{
+        height: 75px;
+     }
+     
+     .signature{
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 18px;
+     }
 }
