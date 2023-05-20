@@ -32,7 +32,6 @@ body{
 .title{ /* название сайта*/
     font-family: 'Roboto';
     font-style: normal;
-    /* height: 48px; */
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
@@ -541,7 +540,6 @@ body{
         position: absolute;
         top: 0;
         right: 0;
-
         width: auto;
         height: auto;
         background: none;
@@ -593,12 +591,13 @@ body{
     .menu{
         position: fixed;
         padding-top: 30px;
-        width: 40%;
+        width: 160px;
         top: 0;
-        right: -50%;
+        right: -60%;
         background-color: white;
 
-        height: 230px;
+        height: 220px;
+        padding-bottom: 15px;
 
         display: flex;
         flex-direction: column;
@@ -611,6 +610,8 @@ body{
 
     .menu.active{
         right: 0;
+        position: absolute;
+        border-radius: 0px 0px 0px 20px;
         
     }
 
