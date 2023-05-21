@@ -61,12 +61,12 @@
                 <div class="name">
                     <p class="name_text">Задать вопрос</p>
                 </div>
-                <form action="" class="form">
+                <form action="telegram.php" id="form" class="form">
                     <div class="send_form">
-                        <input type="text" class="form1 formstyle" placeholder="Ваше имя" required>
-                        <input type="email" class="form1 formstyle" placeholder="Ваш e-mail">
-                        <textarea class="form2 formstyle" cols="30" rows="10" placeholder="Сообщение" maxlength="5"></textarea>
-                        <button class="send_button">Отправить</button>
+                        <input name="name" type="text" class="form1 formstyle" placeholder="Ваше имя" required>
+                        <input name="email" type="email" class="form1 formstyle" placeholder="Ваш e-mail">
+                        <textarea name="text" class="form2 formstyle" cols="30" rows="10" placeholder="Сообщение" maxlength="300"></textarea>
+                        <button id="button" class="send_button">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -83,7 +83,9 @@
     </div>
 
     <script src="animation/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="main.js"></script>
+    <script src="my_script.js"></script>
     
 </body>
 </html>
