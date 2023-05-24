@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="contacts.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Контакты</title>
     </head>
 
 <body>
@@ -61,12 +61,12 @@
                 <div class="name">
                     <p class="name_text">Задать вопрос</p>
                 </div>
-                <form action="" class="form">
+                <form action="telegram.php" id="form" class="form">
                     <div class="send_form">
-                        <input type="text" class="form1 formstyle" placeholder="Ваше имя" required>
-                        <input type="email" class="form1 formstyle" placeholder="Ваш e-mail">
-                        <textarea class="form2 formstyle" cols="30" rows="10" placeholder="Сообщение" maxlength="5"></textarea>
-                        <button class="send_button">Отправить</button>
+                        <input id="name" name="name" type="text" class="form1 formstyle" placeholder="Ваше имя" required>
+                        <input id="email" name="email" type="email" class="form1 formstyle" placeholder="Ваш e-mail">
+                        <textarea id="text" name="text" class="form2 formstyle" cols="30" rows="10" placeholder="Сообщение" maxlength="300"></textarea>
+                        <button id="button" class="send_button">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -78,12 +78,22 @@
 
 
     <div class="bottom">
-        <br>Лиценция<br><br>
-        © 1209-2058 Журнал “Название”
+        <div class="bottom_left">
+            <br>Лиценция<br>
+            © 1209-2058 Журнал “Название”
+        </div>
+
+        <form class="bottom_sosials">
+            <button class="bottom_whatsapp_button"><img src="whatsapp.png" alt="" class="bottom_whatsapp_img"></button>
+            <button class="bottom_telegram_button"><img src="Telegram.png" alt="" class="bottom_telegram_img"></button>
+            <button class="bottom_vk_button"><img src="VK.png" alt="" class="bottom_vk_img"></button>
+        </form>
     </div>
 
     <script src="animation/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="main.js"></script>
+    <script src="my_script.js"></script>
     
 </body>
 </html>
